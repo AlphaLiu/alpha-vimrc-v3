@@ -27,6 +27,8 @@ if !exists("g:override_bundles")
 
 	" general
 	if count(g:bundle_groups, 'general')
+		Bundle 'scrooloose/nerdtree' " NERD Tree
+		Bundle 'fholgado/minibufexpl.vim' " Minibufferexpl
 	endif
 
 	" programming

@@ -8,7 +8,14 @@
 	"Default Colorscheme
 	colorscheme molokai 
 "}
-"
+"MinibufferExpl {
+	let g:miniBufExplModSelTarget = 1
+	let g:miniBufExplUseSingleClick = 1
+	let g:miniBufExplMapWindowNavVim = 1
+	let g:miniBufExplMapWindowNavArrows = 1
+	let g:miniBufExplMapCTabSwitchBufs = 1
+	"let g:miniBufExplorerMoreThanOne = 1
+"}
 "Key (re)mapping {
 	let mapleader = ","
 	let g:mapleader = ","
