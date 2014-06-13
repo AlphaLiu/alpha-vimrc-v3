@@ -22,9 +22,9 @@ __Description__: The 3RD VERSION of VIMRC which I used.
 
 ## 2. Key (re)Mappings
 ### 2. 1 Keys
-* \<Leader\> = ,
-* \<C\> = Ctrl
-* \<Tab\> = Tab
+* \<Leader\> __=__ ,
+* \<C\> __=__ Ctrl
+* \<Tab\> __=__ Tab
  
 ### 2.2 Mappings
 * \<C-j\> Jump to the below window. (Normal)
