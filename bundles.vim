@@ -14,10 +14,17 @@ if executable('ack')
 endif
 
 if !exists('g:bundle_groups')
-	let g:bundle_groups=['general', 'programming', 'ruby-rails', 'web', 'misc']
+	let g:bundle_groups=['colorschemes', 'general', 'programming', 'ruby-rails', 'web', 'misc']
 endif
 
 if !exists("g:override_bundles")
+	" colorschemes
+	if count(g:bundle_groups, 'colorschemes')
+		Bundle 'altercation/vim-colors-solarized' " Solarized Colorscheme
+		Bundle 'spf13/vim-colors' " Colorscheme sets
+		Bundle 'vim-scripts/ScrollColors' " colorscheme Scroller/Chooser/Browser
+	endif
+
 	" general
 	if count(g:bundle_groups, 'general')
 	endif
