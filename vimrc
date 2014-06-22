@@ -82,16 +82,24 @@ set noswapfile
   set si
   "C-style indenting
   set cindent
+
   "wrap
   set wrap
   "带有如下符号的单词不要被换行分割
   set iskeyword+=_,$,@,%,#,-
   "backspace and cursor keys wrap to
   set whichwrap=b,s,h,l,<,>,[,]
-  "no error bells
+
+  "no bells
   set noerrorbells
+  set novisualbell
+  set t_vb=
 "}
 
+"Vim action {
+  "Source the vimrc file after saving it
+  autocmd BufWritePost $MYVIMRC source $MYVIMRC
+"}
 
 
 
@@ -108,12 +116,34 @@ set noswapfile
   let g:miniBufExplMapCTabSwitchBufs = 1
   "let g:miniBufExplorerMoreThanOne = 1
 "}
+
+"NerdTree {
+  map <F4> :NERDTreeToggle<cr>
+  "map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+  map <leader>e :NERDTreeFind<CR>
+  let NERDTreeShowBookmarks=1
+  let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
+  let NERDTreeChDirMode=0
+  let NERDTreeQuitOnOpen=0
+  let NERDTreeShowHidden=0
+  let NERDTreeKeepTreeInNewTab=1
+  let NERDTreeWinPos = "left"
+  let NERDTreeMapChangeRoot="cc"
+  "Open NERDTree when vim open without arguments
+  autocmd vimenter * if !argc() | NERDTree | endif
+"}
+
 "Key (re)mapping {
+
   let mapleader = ","
   let g:mapleader = ","
+
   map <C-j> <C-W>j
   map <C-k> <C-W>k
   map <C-h> <C-W>h
   map <C-l> <C-W>l
   map <C-i> <C-W><C-W>
+
+  "Fast edit the .vimrc file using ,x
+  nnoremap <Leader>x :edit $MYVIMRC<CR>
 "}

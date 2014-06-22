@@ -22,19 +22,23 @@ __Description__: The 3RD VERSION of VIMRC which I used.
 
 ## 2. Key (re)Mappings
 ### 2. 1 Keys
-* \<Leader\> __=__ ,
-* \<C\> __=__ Ctrl
-* \<Tab\> __=__ Tab
+* __\<Leader\>__ equals comma" __,__"
+* __\<C\>__ equals __Ctrl__ key
+* __\<Tab\>__ equals __Tab__ key
+* __\<S\>__ equals __Shift__ key
  
 ### 2.2 Mappings
-* \<C-j\> Jump to the below window. (Normal)
-* \<C-k\> Jump to the above window. (Normal)
-* \<C-h\> Jump to the left window. (Normal)
-* \<C-l\> Jump to the right window. (Normal)
-* \<C-i\> Jump between windows. (Normal)
-* \<Tab\> Same as <C-i>, jump between windows. (Normal)
+* __\<C-j\>__ Jump to the below window. (Normal)
+* __\<C-k\>__ Jump to the above window. (Normal)
+* __\<C-h\>__ Jump to the left window. (Normal)
+* __\<C-l\>__ Jump to the right window. (Normal)
+* __\<C-i\>__ Jump between windows. (Normal)
+* __\<Tab\>__ Same as <C-i>, jump between windows. (Normal)
+* __\<Leader\>x__ Fast edit .vimrc. (Normal)
+* __\<F4\>__ Toggle NERDTree. (Normal)
+* __\<Leader\>e__ Open NERDTreeFind, find the current file in the tree. (Normal)
 
-
+### 2.3 Plugins internal keys
 
 
 [Solarized Colorscheme for Vim]: https://github.com/altercation/vim-colors-solarized
