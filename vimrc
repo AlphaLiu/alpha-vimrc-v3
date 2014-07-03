@@ -100,13 +100,58 @@ set noswapfile
   "Source the vimrc file after saving it
   autocmd BufWritePost $MYVIMRC source $MYVIMRC
 "}
+"
+"matchit.vim {
+  runtime macros/matchit.vim
+"}
 
+"Key (re)mapping {
 
+  "change the <Leader> key to ,
+  let mapleader = ","
+  let g:mapleader = ","
 
+  map <C-j> <C-W>j
+  map <C-k> <C-W>k
+  map <C-h> <C-W>h
+  map <C-l> <C-W>l
+  map <C-i> <C-W><C-W>
+
+  "Fast edit the .vimrc file using ,x
+  nnoremap <Leader>x :edit $MYVIMRC<CR>
+
+  "remap key jj as ESC key in insert mode
+  imap jj <Esc>
+
+  "auto skip 1 char in insert mode
+  imap <F12> <Esc>la
+
+  "Tab configuration
+  map <leader>tn :tabnew .<cr>
+  map <leader>tc :tabclose<cr>
+  map <leader>tm :tabn<cr>
+  map <leader>tp :tabp<cr>
+
+  "close buffer
+  nmap <leader>q :bd<cr>
+
+  "quick save
+  nmap <leader>w :w!<cr>
+
+  "Wrapped lines goes down/up to next row, rather than next line in file.
+  nnoremap j gj
+  nnoremap k gk
+
+  "clear search highlight
+  nmap <silent> <leader>/ :nohlsearch<CR>
+
+  "For when you forget to sudo.. Really Write the file.
+  cmap w!! w !sudo tee % >/dev/null
+"}
 
 "vim-color {
   "Default Colorscheme
-  colorscheme molokai 
+  colorscheme molokai
 "}
 "MinibufferExpl {
   let g:miniBufExplModSelTarget = 1
@@ -133,17 +178,3 @@ set noswapfile
   autocmd vimenter * if !argc() | NERDTree | endif
 "}
 
-"Key (re)mapping {
-
-  let mapleader = ","
-  let g:mapleader = ","
-
-  map <C-j> <C-W>j
-  map <C-k> <C-W>k
-  map <C-h> <C-W>h
-  map <C-l> <C-W>l
-  map <C-i> <C-W><C-W>
-
-  "Fast edit the .vimrc file using ,x
-  nnoremap <Leader>x :edit $MYVIMRC<CR>
-"}

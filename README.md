@@ -18,6 +18,8 @@ __Description__: The 3RD VERSION of VIMRC which I used.
 * [NERD Tree] allows you to explore your filesystem and to open files and directories.
 * [MiniBufExpl] Elegant buffer explorer
 ![minibufexpl](https://github.com/AlphaLiu/alpha-vimrc-v3/raw/master/images/minibufexpl.gif)
+* [Surround.vim] Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML tags, and more. 
+* [Repeat.vim] Repeat.vim remaps . in a way that plugins can tap into it.
 
 
 ## 2. Key (re)Mappings
@@ -37,6 +39,15 @@ __Description__: The 3RD VERSION of VIMRC which I used.
 * __\<Leader\>x__ Fast edit .vimrc. (Normal)
 * __\<F4\>__ Toggle NERDTree. (Normal)
 * __\<Leader\>e__ Open NERDTreeFind, find the current file in the tree. (Normal)
+* __jj__ Act as __<ESC>__. (Insert)
+* __\<F12\>__ Jump 1 char in insert mode. (Insert)
+* __\<Leader\>tn__ Create new tab. (Normal)
+* __\<Leader\>tc__ Close tab. (Normal)
+* __\<Leader\>tm__ Move to next tab. (Normal)
+* __\<Leader\>tp__ Move to previous tab. (Normal)
+* __\<Leader\>q__ Close buffer. (Normal)
+* __\<Leader\>w__ Quick save. (Normal)
+* __\<Leader\>/__ Clear search results highlight. (Normal)
 
 ### 2.3 Plugins internal keys
 
@@ -46,3 +57,5 @@ __Description__: The 3RD VERSION of VIMRC which I used.
 [ScrollColors]: https://github.com/vim-scripts/ScrollColors
 [NERD Tree]: https://github.com/scrooloose/nerdtree
 [MiniBufExpl]: https://github.com/techlivezheng/vim-plugin-minibufexpl
+[Surround.vim]: https://github.com/tpope/vim-surround
+[Repeat.vim]: https://github.com/tpope/vim-repeat

@@ -30,6 +30,8 @@ if !exists("g:override_bundles")
   if count(g:bundle_groups, 'general')
     Bundle 'scrooloose/nerdtree'
     Bundle 'fholgado/minibufexpl.vim'
+    Bundle 'tpope/vim-surround'
+    Bundle 'tpope/vim-repeat'
   endif
 
 endif
